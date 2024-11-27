@@ -1,0 +1,82 @@
+---
+title: "Data Visualization"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    theme: paper
+    highlight: tango
+---
+
+
+```{r}
+
+#Loading Required Libraries
+library(tidyverse)
+
+#Reading Data
+sdg <- read.csv("SDG Dataset.csv")
+attach(sdg)
+
+#Summary of the Data
+summary(sdg)
+
+
+
+# Summarize the multiple regression results
+summary(multiple_regression)
+
+# Regression Model
+reg = lm(sdg_index_score~goal_1_score + goal_2_score + goal_3_score + 
+           goal_4_score + goal_5_score + goal_6_score + goal_7_score +
+           goal_8_score+ goal_9_score + goal_10_score + goal_11_score +
+           goal_12_score + goal_13_score + goal_14_score + goal_15_score +
+           goal_16_score + goal_17_score, data = sdg)
+
+#Summary of Regression Model:
+summary(reg)
+
+
+# Basic scatter plot with regression line
+library(ggplot2)
+
+#Scatter Plot :
+ggplot(sdg, aes(x = goal_1_score, y = sdg_index_score)) +
+  geom_point(color = "darkgreen",size=1) +
+  geom_smooth(method = 'lm', formula = sdg_index_score~goal_1_score + goal_2_score + goal_3_score + 
+                goal_4_score + goal_5_score + goal_6_score + goal_7_score +
+                goal_8_score+ goal_9_score + goal_10_score + goal_11_score +
+                goal_12_score + goal_13_score + goal_14_score + goal_15_score +
+                goal_16_score + goal_17_score, se = FALSE)+
+  labs(x = "17 Goals Score", y = "SDG Index Score")
+
+
+#Decision Tree
+
+#Loading Required Libraries
+library(rpart)
+library(rpart.plot)
+
+
+#Reading Data
+sdg <- read.csv("SDG Dataset.csv")
+
+#Decision Tree Model
+model <- rpart( sdg_index_score ~ goal_1_score + goal_2_score + goal_3_score + 
+                  goal_4_score + goal_5_score + goal_6_score + goal_7_score +
+                  goal_8_score+ goal_9_score + goal_10_score + goal_11_score +
+                  goal_12_score + goal_13_score + goal_14_score + goal_15_score +
+                  goal_16_score + goal_17_score, data = sdg)
+
+#Plotting the Decision Tree
+rpart.plot(model)
+
+# Plot the decision tree with green color
+rpart.plot(model, box.palette = "Green")
+
+
+```
+
+
+
+
