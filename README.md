@@ -26,6 +26,45 @@ Multiple regression model
 Decision Tree model
 
 
+Multiple Regression Model:
+
+A multiple regression model is a statistical technique used to analyze the relationship between one dependent variable and multiple independent variables. In our research, the dependent variable is the SDG Index, which represents the overall progress of a country toward achieving the SDGs. The independent variables are the scores of each of the 17 individual SDGs (Goals 1 through 17).
+
+Why Choose a Multiple Regression Model:
+  
+1. Quantitative Analysis: This model allows you to quantitatively analyze the relationship between each of the 17 individual SDGs and the overall SDG Index score. It helps you understand how each goal contributes to the overall index.
+
+2. Control for Multiple Variables: By including all 17 SDGs as independent variables, you can control for the influence of other goals while examining the impact of each specific goal on the SDG Index.
+
+3. Estimation of Coefficients: The model provides estimates of the coefficients for each independent variable, allowing you to assess the relative importance and impact of each goal on the SDG Index.
+
+4. Prediction and Forecasting: The model can be used for predicting future SDG Index scores based on the performance of individual goals, aiding in planning and decision-making.
+
+5. Policy Insights: The model helps identify which goals have a significant positive effect on the SDG Index and which goals might need more attention for improving overall sustainability performance.
+
+
+
+
+Decision Tree Analysis:
+
+A decision tree is a machine learning model that uses a tree-like graph to represent decisions and their possible consequences. It is used to predict the value of a target variable (SDG Index) based on several input variables (SDG scores and other relevant factors).
+
+Why Choose a Decision Tree Analysis:
+  
+1. Interpretability and Visualization: Decision trees offer a clear and easy-to-understand visual representation of the relationships between variables, aiding in the interpretation of results.
+
+2. Identification of Key Drivers: The model can identify which SDGs and other variables are most influential in predicting the SDG Index, providing insights into which goals have the greatest impact.
+
+3. Handling Non-linear Relationships: Decision trees can model non-linear relationships and interactions between variables effectively, which might be present in your data.
+
+4. Decision-Making Support: The model can guide decision-making by illustrating the optimal choices and strategies for improving the SDG Index based on different scenarios.
+
+5. Simplicity and Transparency: Decision trees are intuitive, making them easy to explain to stakeholders and policymakers, which can facilitate the adoption of findings.
+
+In summary, the multiple regression model provides quantitative insights into the relationship between the SDGs and the SDG Index, while the decision tree offers a clear, interpretable, and actionable understanding of these relationships. Using both models allows us to gain a comprehensive view of how the individual SDGs influence the SDG Index, offering valuable insights for improving sustainable development strategies.
+
+
+
 
 # References
 Cernev, T., & Fenner, R. (2020). The importance of achieving foundational Sustainable Development Goals in reducing global risk. Futures, 115, 102492. https://doi.org/10.1016/j.futures.2019.102492
