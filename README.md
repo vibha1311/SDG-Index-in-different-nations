@@ -22,9 +22,8 @@ The Sustainable Development Report 2023 dataset comprises comprehensive data rel
 
 
 # Analysis and Modeling Methods
-A multiple linear regression model is applied to the dataset to find out the quantitative relationship between the 17 SDGs and the SDG index.
-The independent variables are the 17 sustainable development goals, and the dependent variable is the SDG index.
-Time series analysis model is performed to asses the results over time
+Multiple regression model 
+Decision Tree model
 
 
 
